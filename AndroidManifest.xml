@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="2"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="R"
+    package="com.google.enterprise.webapp.x18d5687b69395980"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="R">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <application
+        android:label="@ref/0x7f080008"
+        android:icon="@ref/0x7f070006"
+        android:allowBackup="false"
+        android:supportsRtl="true">
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="org.chromium.webapk.shell_apk.TransparentLauncherActivity"
+            android:excludeFromRecents="true"
+            android:relinquishTaskIdentity="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.iPigeon.institute"
+                    android:pathPrefix="@string/0x14" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="org.chromium.webapk.shell_apk.MainActivity"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.shellApkVersion"
+            android:value="109" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.startUrl"
+            android:value="https://www.iPigeon.institute" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.scope"
+            android:value="https://www.iPigeon.institute/" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.displayMode"
+            android:value="fullscreen" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.orientation"
+            android:value="@string/0x14" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.themeColor"
+            android:value="@string/0x14" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.backgroundColor"
+            android:value="@string/0x14" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.defaultBackgroundColorId"
+            android:resource="@ref/0x7f020004" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.iconId"
+            android:resource="@ref/0x7f070000" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.maskableIconId"
+            android:resource="@ref/0x7f070009" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.splashId"
+            android:resource="@ref/0x7f040002" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.isSplashIconMaskableBooleanId"
+            android:resource="@ref/0x7f010000" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.distributor"
+            android:value="device_policy" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.iconUrlsAndIconMurmur2Hashes"
+            android:value="1596516992.000000" />
+
+        <meta-data
+            android:name="org.chromium.webapk.shell_apk.webManifestUrl"
+            android:value="https://androidmanagement.googleapis.com/webapps/dummy/manifest-404.json" />
+
+        <service
+            android:name="org.chromium.webapk.shell_apk.WebApkServiceFactory"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.WEBAPK_API" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="org.chromium.webapk.shell_apk.IdentityService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="org.webapk.IDENTITY_SERVICE_API" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
